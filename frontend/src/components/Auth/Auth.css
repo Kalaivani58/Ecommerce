@@ -1,0 +1,40 @@
+  
+  .form-control.error {
+    border-color: red;
+  }
+  
+  .form-control.noerror {
+    border-color: green;
+  }
+  
+  .auth-container{
+    height: 91.5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  .position-relative {
+    position: relative;
+  }
+  
+  .toggle-password {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .invalid {
+    display: none;
+    color: #dc3545;
+    font-size: 0.875em;
+  }
+
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
