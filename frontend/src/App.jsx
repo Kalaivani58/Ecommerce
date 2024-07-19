@@ -72,7 +72,7 @@ const App = () => {
                     <span className="nav-link" style={{ marginRight: '10px' }}>
                       Welcome, {userData.username}
                     </span>
-                    <a className="nav-link" href="#" onClick={handleLogout}>
+                    <a className="nav-link" href="http://localhost:5173/login" onClick={handleLogout}>
                       Logout
                     </a>
                   </li>

@@ -3,7 +3,7 @@ const bcrypt = require('bcryptjs');
 const User = require('../models/user');
 
 
-// const jwtSecret = process.env.JWT_SECRET;
+const jwtSecret = process.env.JWT_SECRET;
 // console.log("---secret",jwtSecret);
 
 const authController = {};
@@ -86,7 +86,7 @@ authController.login = async (req, res) => {
         console.log(token);
         
         res.cookie('token', token, { httpOnly: true, maxAge: 240 * 60 * 60 * 1000 }); 
-        console.log("---",token);   // 240 hours in milliseconds
+        // console.log("---",token);   // 240 hours in milliseconds
         res.json({ token:token, name: user.name });
     } catch (error) {
         console.error('Error in login:', error);

@@ -55,7 +55,7 @@ const Login = ({ switchToSignup, onLogin}) => {
           setError('Please check your email and password..!!!');
         } else {
           const data = await response.json();
-          document.cookie = `token=${data.token}; HttpOnly; max-age=${240 * 60 * 60}; path=/`;
+          // document.cookie = `token=${data.token}; HttpOnly; max-age=${240 * 60 * 60}; path=/`;
           // alert('Successfully logged in..');
           onLogin(data.name);
         }
